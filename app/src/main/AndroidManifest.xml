@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <!-- ✅ Add Internet permission here -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- ✅ (Optional) If your app uses network state, add this too -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Yoga"
+        tools:targetApi="31" >
+
+        <!-- Main Activity (Launch Screen) -->
+        <!-- Make SplashActivity your launcher -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".YogaReminderReceiver" android:exported="false" />
+        <!-- Additional Activities -->
+        <activity android:name=".yoga_plan"  android:exported="true" />
+        <activity android:name=".activity_pose_library"  android:exported="true" />
+        <activity android:name=".ChatActivity"  android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".ProgressActivity"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".ClassActivity"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".MorningRoutineActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".PoseDetailActivity"/>
+        <activity android:name=".SuryaNamaskarActivity" />
+        <activity android:name=".EveningRelaxActivity" />
+        <activity android:name=".DeepRelaxationActivity" />
+        <activity android:name=".HeadStandActivity" />
+        <activity android:name=".AdvancedPosesActivity" />
+        <activity android:name=".BoatPoseActivity" />
+        <activity android:name=".WeightLossActivity" />
+        <activity android:name=".YogaDayActivity" />
+        <activity android:name=".ReportActivity" />
+        <activity android:name=".UploadPhotoActivity" />
+        <activity android:name=".ExploreActivity" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".NewsActivity" />
+        <activity android:name=".FullArticleActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
+
+

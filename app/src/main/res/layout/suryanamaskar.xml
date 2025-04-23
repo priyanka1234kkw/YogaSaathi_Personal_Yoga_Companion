@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/light_purple">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- 🔆 Main Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn Surya Namaskar"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#703F67"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp" />
+
+        <!-- 🎬 Video Learning Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/section_background"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎬 Watch Surya Namaskar Tutorial"
+                android:textSize="20sp"
+                android:textColor="@color/deep_purple"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <!-- Thumbnail with play icon overlay -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/youtubeThumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/surya_thumbnail"
+                    android:background="@drawable/image_border"
+                    android:contentDescription="Yoga Video Thumbnail" />
+
+                <!-- Transparent play button overlay -->
+                <ImageView
+                    android:id="@+id/playButton"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_play"
+                    android:layout_gravity="center"
+                    android:contentDescription="Play Video"
+                    android:background="@android:color/transparent" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- ⏱️ Timer and Progress Bar Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="16dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏱️ Session Timer"
+                android:textSize="20sp"
+                android:textColor="@color/deep_purple"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/timerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:30"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/deep_purple"
+                android:layout_gravity="center" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progressTint="@color/accent_purple"
+                android:progressBackgroundTint="@color/light_purple"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+
+        <!-- 🎮 Control Buttons Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:background="@drawable/section_background">
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Start"
+                android:backgroundTint="@color/start_button"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"
+                android:textAllCaps="false"
+                android:elevation="4dp" />
+
+            <Button
+                android:id="@+id/stopButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Stop"
+                android:backgroundTint="@color/stop_button"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"
+                android:textAllCaps="false"
+                android:elevation="4dp" />
+
+            <Button
+                android:id="@+id/musicButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Music"
+                android:backgroundTint="@color/music_button"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:elevation="4dp" />
+        </LinearLayout>
+
+        <!-- 🌿 Benefits Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="16dp"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌿 Benefits of Surya Namaskar"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/green_benefit" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✓ Improves flexibility\n✓ Boosts metabolism\n✓ Enhances blood circulation\n✓ Reduces stress and anxiety"
+                android:textSize="16sp"
+                android:textColor="#444"
+                android:paddingTop="12dp" />
+        </LinearLayout>
+
+        <!-- 🔢 Step-by-Step Pose Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧘 Step-by-Step Instructions"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/deep_purple" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Pranamasana (Prayer Pose)\n2. Hasta Uttanasana (Raised Arms Pose)\n3. Hasta Padasana (Standing Forward Bend)\n4. Ashwa Sanchalanasana (Equestrian Pose)\n5. Dandasana (Stick Pose)\n6. Ashtanga Namaskara (Salute with Eight Parts)\n7. Bhujangasana (Cobra Pose)\n8. Adho Mukha Svanasana (Downward Dog Pose)\n9. Ashwa Sanchalanasana (Repeat)\n10. Hasta Padasana\n11. Hasta Uttanasana\n12. Pranamasana"
+                android:textSize="16sp"
+                android:textColor="#444"
+                android:paddingTop="12dp" />
+        </LinearLayout>
+
+        <!-- 🕰️ Practice Info Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💡 Best Time to Practice"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/deep_purple" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Early morning on an empty stomach\n• Calm, quiet surroundings\n• Recommended 5-12 rounds daily"
+                android:textSize="16sp"
+                android:textColor="#444"
+                android:paddingTop="12dp" />
+        </LinearLayout>
+
+        <!-- 📊 Activity History Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📊 Activity History"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/deep_purple"
+                android:gravity="center" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/historyRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

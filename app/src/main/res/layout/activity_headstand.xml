@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/surya_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- Enhanced Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Headstand Pose (Sirsasana)"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/title_background"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp"/>
+
+        <!-- Animated ImageView with Border -->
+        <ImageView
+            android:id="@+id/animationView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_1"
+            android:background="@drawable/image_border"
+            android:elevation="8dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Timer Section with Background -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/timerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:30"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="#BF360C"
+                android:layout_gravity="center"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progressTint="#FF6D00"
+                android:progressBackgroundTint="#80FFE0B2"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+
+        <!-- Enhanced Control Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:background="@drawable/section_background">
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Start"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/stopButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Stop"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/musicButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Music"
+                android:backgroundTint="#2196F3"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Benefits Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="16dp"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌿 Benefits of Headstand Pose"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#2E7D32"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✓ Improves focus and concentration\n✓ Strengthens the core and shoulders\n✓ Enhances blood flow to the brain\n✓ Relieves stress and anxiety"
+                android:textSize="16sp"
+                android:textColor="#444"/>
+        </LinearLayout>
+
+        <!-- Steps Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧘 Steps to Perform Headstand"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#D84315"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Begin in a kneeling position.\n2. Interlock fingers and place your forearms on the mat.\n3. Place the crown of your head between your hands.\n4. Lift your knees and straighten your legs.\n5. Walk your feet closer to your head.\n6. Slowly lift your legs off the ground.\n7. Hold the position for 10-30 seconds.\n8. Lower your legs slowly and rest."
+                android:textSize="16sp"
+                android:textColor="#444"/>
+        </LinearLayout>
+
+        <!-- Activity History Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/section_background"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activity History"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#D84315"
+                android:gravity="center"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">yoga</string>
+    <string name="reply">Chatbot will reply here</string>
+    <string name="type_msg">Type your message</string>
+    <string name="send">send</string>
+    <string name="welcome">Yoga A Path To Wellness</string>
+    <string name="poses">Poses Library</string>
+    <string name="chatbot">Make Conversation</string>
+</resources>

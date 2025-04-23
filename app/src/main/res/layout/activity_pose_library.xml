@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pose_bg">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+
+            <!-- App Logo -->
+
+            <!-- Title -->
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="App Logo"
+                android:src="@drawable/img_7"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_image"
+                android:clipToOutline="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yoga Poses covered"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:textColor="#D81B60"
+                android:layout_marginTop="18dp"
+                />
+
+            <!-- Yoga Poses Buttons -->
+            <Button
+                android:id="@+id/btn_parvatasana"
+                style="@style/YogaButton"
+                android:text="Parvatasan(पर्वतासन)"
+                />
+
+            <Button
+                android:id="@+id/btn_bhujangasana"
+                style="@style/YogaButton"
+                android:text="Bhujangasan(भुजंगासन)" />
+
+            <Button
+                android:id="@+id/btn_vrikshasana"
+                style="@style/YogaButton"
+                android:text="Vrikshasana(वृक्षासन)" />
+
+            <Button
+                android:id="@+id/btn_balasana"
+                style="@style/YogaButton"
+                android:text="Balasana(बालासन)" />
+
+            <Button
+                android:id="@+id/btn_veera"
+                style="@style/YogaButton"
+                android:text="Veerbhadrasan(वीरभद्रासन)" />
+
+            <Button
+                android:id="@+id/btn_meditation"
+                style="@style/YogaButton"
+                android:text="Meditation (योगनिद्रा)" />
+
+            <Button
+                android:id="@+id/btn_surya"
+                style="@style/YogaButton"
+                android:text="Surya Namaskar(सूर्य नमस्कार)" />
+
+            <!-- Add More Items for Scrolling Effect -->
+            <Button
+                android:id="@+id/btn_extra1"
+                style="@style/YogaButton"
+                android:text="Extra Pose 1" />
+
+            <Button
+                android:id="@+id/btn_extra2"
+                style="@style/YogaButton"
+                android:text="Extra Pose 2" />
+
+            <Button
+                android:id="@+id/btn_extra3"
+                style="@style/YogaButton"
+                android:text="Extra Pose 3" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

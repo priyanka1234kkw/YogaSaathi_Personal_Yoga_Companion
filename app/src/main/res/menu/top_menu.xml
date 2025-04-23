@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@drawable/ic_notification"
+        android:title="Notifications"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/img_18"
+        android:title="More"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/contact_us"
+                android:title="Contact Us"/>
+            <item android:id="@+id/rate_us"
+                android:title="Rate Us"/>
+            <item android:id="@+id/feedback"
+                android:title="Feedback"/>
+            <item android:id="@+id/policies"
+                android:title="Policies"/>
+            <item android:id="@+id/sign_out"
+                android:title="Sign Out"/>
+        </menu>
+    </item>
+</menu>

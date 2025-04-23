@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="gray_500">#9E9E9E</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_purple">#D8BFD8</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
+    <color name="blue">#2196F3</color>
+        <color name="dark_red">#8B0000</color>
+        <color name="orange">#FFA500</color>
+    <color name="pink">#F37DA5</color>
+    <color name="dark_purple">#6D3B5D</color>
+    <color name="nav_item_color">#000000</color>
+    <color name="gradient_start">#F37DA5</color>
+    <color name="gradient_end">#F7A8B8</color>
+    <color name="primary_color">#4CAF50</color>
+    <color name="primary_dark">#388E3C</color>
+    <color name="accent_color">#FFC107</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="light_background">#F5F5F5</color>
+    <color name="primary_light">#B2DFDB</color>
+    <color name="light_yellow">#FFFDE7</color>
+    <color name="primary_green">#4CAF50</color>
+    <color name="primary_ligh">#C8E6C9</color>
+    <color name="text_primar">#212121</color>
+    <color name="card_stroke">#20000000</color>
+    <color name="primary">#703F67</color>
+    <color name="light">#F8F8F8</color>
+    <color name="text">#212121</color>
+    <color name="text_s">#757575</color>
+    <color name="user_message_color">#4CAF50</color>  <!-- Green -->
+    <color name="bot_message_color">#2196F3</color>    <!-- Blue -->
+
+        <color name="accent_purple">#9C27B0</color>
+        <color name="deep_purple">#512DA8</color>
+        <color name="green_benefit">#388E3C</color>
+        <color name="start_button">#7B1FA2</color>
+        <color name="stop_button">#AD1457</color>
+        <color name="music_button">#512DA8</color>
+
+
+</resources>
+
